@@ -39,7 +39,7 @@ class Game(arcade.Window):
         self.coin_list = arcade.SpriteList()
 
         # Set up the player
-        self.player_sprite = arcade.Sprite("venv/images/p1_stand.png", SPRITE_SCALING_PLAYER)
+        self.player_sprite = arcade.Sprite("/images/p1_stand.png", SPRITE_SCALING_PLAYER)
         self.player_sprite.center_x = 50  # starting pos
         self.player_sprite.center_y = 50
         self.player_list.append(self.player_sprite)
@@ -47,7 +47,7 @@ class Game(arcade.Window):
         # Create the coins
         for i in range(COIN_COUNT):
             # create the coin instance
-            coin = arcade.Sprite("venv/images/coinGold.png", SPRITE_SCALING_COIN)
+            coin = arcade.Sprite("/images/coinGold.png", SPRITE_SCALING_COIN)
 
             # position each coin
             coin.center_x = random.randrange(SCREEN_WIDTH)
